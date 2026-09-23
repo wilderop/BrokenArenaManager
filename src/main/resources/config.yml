@@ -1,0 +1,57 @@
+lobby:
+  world: world
+  spawn:
+    x: 0.5
+    y: -52.0
+    z: 0.5
+    yaw: 91.0
+    pitch: 5.0
+
+max_instances: 50
+spawn_radius: 3
+join_cooldown_seconds: 2
+clear_drops_on_death: true
+# Extra blocks of Y so a flat floor pad still triggers while walking.
+y_pad: 3
+
+builder:
+  min_survival_hours: 100
+  max_arenas_per_player: 3
+  max_pad_volume: 120
+  template_border_size: 256
+  survival_stats_folder: /mnt/pool/survival/world/players/stats
+  worldedit_permissions:
+    - worldedit.wand
+    - worldedit.wand.toggle
+    - worldedit.selection.pos
+    - worldedit.selection.hpos
+    - worldedit.selection.chunk
+    - worldedit.region.set
+    - worldedit.region.replace
+    - worldedit.region.walls
+    - worldedit.region.faces
+    - worldedit.region.overlay
+    - worldedit.region.center
+    - worldedit.region.naturalize
+    - worldedit.generation.cylinder
+    - worldedit.generation.sphere
+    - worldedit.generation.pyramid
+    - worldedit.generation.forest
+    - worldedit.clipboard.copy
+    - worldedit.clipboard.cut
+    - worldedit.clipboard.paste
+    - worldedit.clipboard.flip
+    - worldedit.clipboard.rotate
+    - worldedit.history.undo
+    - worldedit.history.redo
+    - worldedit.history.clear
+    - worldedit.analysis.count
+    - worldedit.analysis.size
+    - worldedit.brush.*
+    - worldedit.tool.*
+    - worldedit.schematic.load
+    - worldedit.schematic.list
+    - worldedit.schematic.save
+    - worldedit.help
+    - fawe.permpack.basic
+    - fawe.bypass

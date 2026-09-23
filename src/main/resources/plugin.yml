@@ -1,0 +1,27 @@
+name: BrokenArenaManager
+version: ${project.version}
+main: com.wilder0p.arenamanager.ArenaManager
+api-version: 1.20
+author: wilder0p
+description: Lobby-driven instanced PvP arenas
+softdepend: [FastAsyncWorldEdit, WorldEdit, PlaceholderAPI]
+
+commands:
+  arenaedit:
+    description: Create and edit arena templates
+    usage: /arenaedit <name> [subcommand]
+    permission: arenamanager.build
+  arena:
+    description: Join, leave, or lock PvP arenas
+    usage: /arena [join|leave|lock|unlock|list]
+    permission: arenamanager.use
+
+permissions:
+  arenamanager.use:
+    default: true
+  arenamanager.build:
+    description: Create and edit your own arenas (also requires 100h on survival)
+    default: true
+  arenamanager.edit:
+    description: Staff bypass — manage any arena, skip playtime gate
+    default: op
